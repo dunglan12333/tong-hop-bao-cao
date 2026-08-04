@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tổng Hợp Báo Cáo Asukaza 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0d0d1a; color:#e0e0e0; font-family:'Segoe UI',Arial,sans-serif; padding:30px 15px; }
+  .container { max-width:1100px; margin:0 auto; }
+  .header { text-align:center; padding:40px 20px; background:linear-gradient(135deg,#1a1a2e,#16213e); border-radius:16px; border:1px solid #FFD70044; margin-bottom:30px; }
+  .header h1 { font-family:'Noto Sans JP',serif; font-size:32px; color:#FFD700; letter-spacing:2px; }
+  .header .sub { color:#aaa; margin-top:8px; font-size:14px; }
+  .badge { display:inline-block; background:#FFD700; color:#1a1a2e; padding:5px 24px; border-radius:20px; font-weight:bold; font-size:13px; margin-top:12px; }
+
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:30px; }
+  .stat-card { background:linear-gradient(135deg,#1a1a2e,#16213e); border-radius:12px; padding:18px; text-align:center; border:1px solid #333; }
+  .stat-card .num { font-size:26px; font-weight:bold; }
+  .stat-card .label { font-size:11px; color:#999; margin-top:4px; }
+  .stat-card.gold .num { color:#FFD700; } .stat-card.green .num { color:#2ECC71; }
+  .stat-card.red .num { color:#E74C3C; } .stat-card.orange .num { color:#F39C12; }
+
+  .section { background:#1a1a2e; border-radius:12px; padding:25px; margin-bottom:25px; border:1px solid #222; }
+  .section h2 { font-family:'Noto Sans JP',serif; font-size:20px; color:#FFD700; margin-bottom:15px; padding-bottom:10px; border-bottom:2px solid #FFD70033; }
+
+  .report-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:12px; }
+  .report-card { background:linear-gradient(135deg,#16213e,#1a1a2e); border-radius:10px; padding:15px; border:1px solid #333; transition:all .2s; }
+  .report-card:hover { border-color:#FFD700; transform:translateY(-2px); }
+  .report-card h3 { font-size:14px; color:#FFD700; margin-bottom:5px; }
+  .report-card p { font-size:11px; color:#999; margin-bottom:8px; }
+  .report-card .tag { display:inline-block; padding:2px 10px; border-radius:10px; font-size:10px; font-weight:bold; margin-right:4px; }
+  .tag-pnl { background:#2ECC7122; color:#2ECC71; border:1px solid #2ECC7144; }
+  .tag-detail { background:#3498DB22; color:#3498DB; border:1px solid #3498DB44; }
+  .tag-sale { background:#F39C1222; color:#F39C12; border:1px solid #F39C1244; }
+  .tag-compare { background:#9B59B622; color:#9B59B6; border:1px solid #9B59B644; }
+  .tag-drink { background:#E74C3C22; color:#E74C3C; border:1px solid #E74C3C44; }
+  .report-card a { display:inline-block; margin-top:8px; color:#FFD700; text-decoration:none; font-size:12px; font-weight:bold; }
+  .report-card a:hover { text-decoration:underline; }
+
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  thead th { background:#0f3460; color:#FFD700; padding:8px; text-align:left; border-bottom:2px solid #FFD70044; }
+  tbody td { padding:6px 8px; border-bottom:1px solid #222; }
+  .num { text-align:right; font-weight:bold; }
+
+  .key-findings { background:linear-gradient(135deg,#2c1010,#3d1515); border:2px solid #E74C3C44; border-radius:12px; padding:20px; }
+  .key-findings li { padding:5px 0; font-size:13px; }
+  .key-findings li::marker { color:#FFD700; }
+
+  .footer { text-align:center; padding:20px; color:#555; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 TỔNG HỢP BÁO CÁO ASUKAZA 2026</h1>
+    <div class="sub">Nhà hàng Asukaza — Buffet Nhật Đào Tấn</div>
+    <div class="badge">📅 Tháng 6 → 3/8/2026 · 570+ hóa đơn · Phân tích lãi lỗ từng bàn</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card gold"><div class="num">570+</div><div class="label">🧾 Hóa đơn phân tích</div></div>
+    <div class="stat-card gold"><div class="num">1,800+</div><div class="label">👥 Khách</div></div>
+    <div class="stat-card gold"><div class="num">1.17 tỷ</div><div class="label">💰 Doanh thu</div></div>
+    <div class="stat-card green"><div class="num">293M</div><div class="label">📈 Lãi gộp</div></div>
+    <div class="stat-card red"><div class="num">22+</div><div class="label">📄 Báo cáo chi tiết</div></div>
+  </div>
+
+  <!-- TỔNG QUAN LÃI LỖ -->
+  <div class="section">
+    <h2>📋 TỔNG QUAN LÃI LỖ CHÍNH</h2>
+    <table>
+      <thead><tr><th>Giai đoạn</th><th>HĐ</th><th style="text-align:right">Doanh thu</th><th style="text-align:right">Giá vốn</th><th style="text-align:right">Lãi</th><th style="text-align:center">TLệ</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Tháng 6</strong></td><td>259</td><td class="num">494.8M</td><td class="num">467.2M</td><td class="num" style="color:#2ECC71">+27.6M</td><td class="num" style="color:#F39C12">5.6%</td></tr>
+        <tr><td><strong>1/7 → 3/8</strong> (giá vốn V2+15K)</td><td>311</td><td class="num">674.6M</td><td class="num">408.7M</td><td class="num" style="color:#2ECC71">+265.9M</td><td class="num" style="color:#2ECC71">39.4%</td></tr>
+        <tr><td>Trong đó: 1-3/8 (3 ngày đầu)</td><td>37</td><td class="num">92.9M</td><td class="num">54.5M</td><td class="num" style="color:#2ECC71">+38.3M</td><td class="num" style="color:#2ECC71">41.3%</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px;font-size:12px;color:#aaa;">⚠️ Lưu ý: Giá vốn tháng 6 tính theo file giá cũ, chưa áp dụng V2 (sẽ thấp hơn nếu áp dụng V2)</div>
+  </div>
+
+  <!-- 3 KỊCH BẢN -->
+  <div class="section">
+    <h2>🎯 3 KỊCH BẢN LÃI LỖ (1-17/7)</h2>
+    <table>
+      <thead><tr><th>Kịch bản</th><th style="text-align:right">Doanh thu</th><th style="text-align:right">Lãi</th><th style="text-align:center">TLệ</th><th>So KB1</th></tr></thead>
+      <tbody>
+        <tr><td>🔴 KB1: Hiện tại</td><td class="num">304.8M</td><td class="num" style="color:#F39C12">+67.7M</td><td class="num" style="color:#F39C12">22.2%</td><td>—</td></tr>
+        <tr><td>🟡 KB2: Bỏ giảm giá (+44.3M)</td><td class="num">349.0M</td><td class="num" style="color:#F39C12">+112.0M</td><td class="num" style="color:#F39C12">32.1%</td><td>+65%</td></tr>
+        <tr><td>🟢 KB3: Bỏ giảm + Đúng giá vé (+27.9M)</td><td class="num">376.9M</td><td class="num" style="color:#2ECC71">+139.9M</td><td class="num" style="color:#2ECC71">37.2%</td><td>+107%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PHÁT HIỆN CHÍNH -->
+  <div class="section">
+    <h2>🔥 PHÁT HIỆN CHÍNH</h2>
+    <div class="key-findings">
+      <li>🏷️ <strong>Giảm giá 112 triệu</strong> trong 1/7-3/8 (16.6% doanh thu) — đang ăn mòn lợi nhuận nghiêm trọng</li>
+      <li>💸 <strong>Bán buffet giá rẻ:</strong> 131 vé 650K bán 450K (VIP nâng hạng) = mất <strong>26.2 triệu</strong></li>
+      <li>🥩 <strong>Giá vốn Wagyu A5:</strong> Karubi 65K · YakiShabu 60-65K · Set Thịt 650K = 135K</li>
+      <li>🍨 <strong>Kem 15K</strong> · Kem mochi 8K → 15K (cập nhật mới)</li>
+      <li>🔴 <strong>Bàn hay lỗ:</strong> B18+19 (Wagyu quá nhiều), B28 (7 khách ăn 90 PHAN), B23 (Hoàng Gia bán rẻ)</li>
+      <li>🟢 <strong>Bàn lời nhất:</strong> B37(T3) 8.2M/ngày, B33 83.8%, B21 87.5%</li>
+      <li>🍺 <strong>Bia Sapporo:</strong> Tháng 6: 222 lon · Tháng 7 (1-17): 101 lon · Bán mạnh thứ 3, thứ 6</li>
+    </div>
+  </div>
+
+  <!-- TẤT CẢ BÁO CÁO -->
+  <div class="section">
+    <h2>📄 TẤT CẢ BÁO CÁO</h2>
+    <div class="report-grid">
+
+      <div class="report-card">
+        <h3>📊 Lãi lỗ 1/7 → 3/8</h3>
+        <p>Tổng hợp 311 HĐ · 1,038 khách · lãi 265.9M (39.4%) · Giá vốn V2+15K</p>
+        <span class="tag tag-pnl">P&L</span><span class="tag tag-compare">Tổng hợp</span>
+        <br><a href="https://dunglan12333.github.io/baocao-1-7-den-3-8/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📅 Chi tiết 1-3/8 (2 kịch bản)</h3>
+        <p>3 ngày đầu tháng 8 · từng bàn có/không giảm giá</p>
+        <span class="tag tag-pnl">P&L</span><span class="tag tag-compare">So sánh</span>
+        <br><a href="https://dunglan12333.github.io/chitiet-1-3-8/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 Hóa đơn vé 650K</h3>
+        <p>182 HĐ · 618 vé · lãi 167.2M (42.4%) · phát hiện bán 450K mất 26.2M</p>
+        <span class="tag tag-sale">Vé 650K</span>
+        <br><a href="https://dunglan12333.github.io/hoadon-ve-650k/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📊 3 kịch bản lãi lỗ</h3>
+        <p>Hiện tại vs Bỏ giảm giá vs Đúng giá vé · 1-17/7</p>
+        <span class="tag tag-compare">Kịch bản</span>
+        <br><a href="https://dunglan12333.github.io/so-sanh-3-kb/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🔵 Lãi lỗ tháng 6</h3>
+        <p>259 HĐ · 494.8M · lãi 27.6M (5.6%)</p>
+        <span class="tag tag-pnl">P&L</span>
+        <br><a href="https://dunglan12333.github.io/thang6-baocao/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🟢 Lãi lỗ tháng 7 (1-17)</h3>
+        <p>147 HĐ · 696 khách · lãi 68.8M (22.6%) · đã fix giá vốn</p>
+        <span class="tag tag-pnl">P&L</span>
+        <br><a href="https://dunglan12333.github.io/thang7-baocao/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🌙 Buổi tối 1-17/7</h3>
+        <p>90 HĐ tối · 253 khách · lãi 17.8M · bàn lỗ nhất B18+19</p>
+        <span class="tag tag-pnl">P&L tối</span>
+        <br><a href="https://dunglan12333.github.io/asukaza-buoi-toi/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🍺 Bia Sapporo 6-7/2026</h3>
+        <p>Tháng 6: 222 lon · 1-17/7: 101 lon · phân tích theo thứ</p>
+        <span class="tag tag-drink">Đồ uống</span>
+        <br><a href="https://dunglan12333.github.io/asukaza-bia-sapporo/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📅 Ngày 23/7</h3>
+        <p>11 HĐ · lãi 16.1M (50.6%) · top 10 món · kem 15K</p>
+        <span class="tag tag-pnl">P&L</span><span class="tag tag-sale">Top món</span>
+        <br><a href="https://dunglan12333.github.io/ngay23-7/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📅 Ngày 26/7</h3>
+        <p>16 HĐ · lãi 15.3M (46.8%) · sashimi 10 PHAN</p>
+        <span class="tag tag-pnl">P&L</span>
+        <br><a href="https://dunglan12333.github.io/ngay26-7/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📅 Ngày 18/7 (V2)</h3>
+        <p>19 HĐ · lãi 21.5M (46.4%) · giá vốn mới</p>
+        <span class="tag tag-pnl">P&L</span>
+        <br><a href="https://dunglan12333.github.io/ngay18-7-v2/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📅 Ngày 11/7</h3>
+        <p>17 HĐ · ngày lỗ duy nhất · giảm 9.93M (32%)</p>
+        <span class="tag tag-pnl">P&L</span>
+        <br><a href="https://dunglan12333.github.io/ngay11-7/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 HĐ 60008 — B18+19 (6/7)</h3>
+        <p>Bàn lỗ nhất buổi tối · -1.45M · chi tiết từng món giá vốn</p>
+        <span class="tag tag-detail">Chi tiết</span>
+        <br><a href="https://dunglan12333.github.io/hd60008-chitiet/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 HĐ 110006 — B28 (11/7)</h3>
+        <p>5 khách gọi 80 PHAN · Wagyu 41 lần · -4.46M</p>
+        <span class="tag tag-detail">Chi tiết</span>
+        <br><a href="https://dunglan12333.github.io/hd110006-chitiet/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 HĐ 230001 — B16 (23/7)</h3>
+        <p>VIP 450K · +100K (5.1%) · chi tiết giá vốn từng món</p>
+        <span class="tag tag-detail">Chi tiết</span>
+        <br><a href="https://dunglan12333.github.io/hd230001-chitiet/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 HĐ 180002 — B18+19 (18/7)</h3>
+        <p>4 khách · +285K (13.8%) · chi tiết từng món</p>
+        <span class="tag tag-detail">Chi tiết</span>
+        <br><a href="https://dunglan12333.github.io/hd180002-chitiet/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 HĐ 180004 — B22 (18/7)</h3>
+        <p>1 khách · +103K (14.1%) · chi tiết từng món</p>
+        <span class="tag tag-detail">Chi tiết</span>
+        <br><a href="https://dunglan12333.github.io/hd180004-chitiet/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>🧾 Hóa đơn thực tế 16/7</h3>
+        <p>8 HĐ · 39 khách · 22.67M · so sánh ước tính vs thực tế</p>
+        <span class="tag tag-detail">Hóa đơn</span>
+        <br><a href="https://dunglan12333.github.io/asukaza-hoadon-16-7/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📊 16/7 — Sushi & Sashimi</h3>
+        <p>32 sushi PHAN · 25 sashimi PHAN · top món kem vani</p>
+        <span class="tag tag-sale">Món ăn</span>
+        <br><a href="https://dunglan12333.github.io/asukaza-baocao-16-7/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+      <div class="report-card">
+        <h3>📋 16/7 — Lãi lỗ từng bàn</h3>
+        <p>7 nhóm bàn · lãi 3.08M (13.6%) · B18+19 lỗ nhất</p>
+        <span class="tag tag-pnl">P&L</span>
+        <br><a href="https://dunglan12333.github.io/asukaza-loilo-final-16-7/" target="_blank">🔗 Xem báo cáo →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GIÁ VỐN CHUẨN -->
+  <div class="section">
+    <h2>💾 GIÁ VỐN CHUẨN ĐANG ÁP DỤNG</h2>
+    <table>
+      <thead><tr><th>Món</th><th style="text-align:right">Giá vốn</th><th>Ghi chú</th></tr></thead>
+      <tbody>
+        <tr><td>🥩 Wagyu A5 Karubi</td><td class="num">65,000đ</td><td>Bò Wagyu A5</td></tr>
+        <tr><td>🥩 Wagyu A5 YakiShabu Ponzu</td><td class="num">60,000đ</td><td>Bò Wagyu A5</td></tr>
+        <tr><td>🥩 Wagyu A5 YakiShabu Sukiyaki</td><td class="num">65,000đ</td><td>Bò Wagyu A5</td></tr>
+        <tr><td>🥩 Diềm bụng (NIKUICHI)</td><td class="num">30,550đ</td><td>Phân biệt với Wagyu 65K</td></tr>
+        <tr><td>🥩 Diềm thăn Harami (NIKUICHI)</td><td class="num">29,250đ</td><td>Phân biệt với Wagyu 65K</td></tr>
+        <tr><td>🍞 Set Thịt 450/650/950</td><td class="num">90K/135K/215K</td><td>Phân theo hạng vé</td></tr>
+        <tr><td>🍨 Kem (tất cả loại)</td><td class="num">15,000đ</td><td>Kem mochi + kem thường</td></tr>
+        <tr><td>🐟 Sashimi cá hồi</td><td class="num">54,000đ</td><td></td></tr>
+        <tr><td>🦐 Hải sản tổng hợp</td><td class="num">100,000đ</td><td></td></tr>
+        <tr><td>🍜 Cơm trắng</td><td class="num">10,000đ</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hermes Agent · Asukaza 🍣 · Báo cáo tổng hợp 6/2026 → 3/8/2026 · Cập nhật giá vốn V2 + Kem 15K
+  </div>
+
+</div>
+</body>
+</html>
